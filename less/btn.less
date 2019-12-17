@@ -1,0 +1,290 @@
+
+.btn {
+	padding: 6px 15px;
+	.border-radius(2px);
+	i {
+		margin-right: 5px;
+	}
+
+	&.small {
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+	&.medium {
+		padding: 8px 25px;
+	}
+	&.large {
+		padding: 12px 15px;
+	}
+	&.huge {
+		padding: 15px 25px;
+	}
+	&.round {
+		.border-radius(30px);
+	}
+
+	&.has-arrow {	
+		position: relative;
+		&:after {
+			content: "\f105 ";
+			font-family: "FontAwesome";
+			display: inline-block;
+			position: absolute;
+		}
+		&.right {
+			text-align: left;
+			&:after {
+				padding-left: 30px;
+    			right: 25px;
+    			width: 0;
+			}
+		}
+	}
+
+	&.btn-afix {
+		min-width: 190px;
+	}
+	&.btn-link {
+		&.me-opacity {
+			.opacity(0.2);
+			&:hover, &:focus {
+				.opacity(1);
+			}
+		}
+	}
+	&.btn-gray {
+		background-color: #e8e8e8;
+		border-color: #e8e8e8;
+		color: #666;
+	}
+	&.btn-black {
+		background-color: @gray-base;
+		border-color: @gray-base;
+		color: @white;
+	}
+	&.btn-primary {
+		background-color: @brand-primary;
+		border-color:  darken(@brand-primary, 5%);
+
+		&:hover, &:active, &:focus {
+			background-color: darken(@brand-primary, 5%);
+		}
+	}
+	&.btn-secondary {
+		background-color: @brand-secondary;
+		color: @white;
+		border-color:  darken(@brand-secondary, 5%);
+
+		&:hover, &:active, &:focus {
+			background-color: darken(@brand-secondary, 5%);
+		}
+	}
+	&.btn-default {
+		color: #392f2b;
+	}
+
+	&.unstroked {
+		border: 0 !important;
+	}
+	&.square {
+		.border-radius(0);
+	}
+
+
+
+	&.stroked {
+		border-width: 1px;
+		background-color: transparent !important;
+
+		&.stk2 {
+			border-width: 2px;
+		}
+
+		&.btn-default {
+			border-color: @border-color;
+			color: @white;
+
+			&:hover {
+				border-color: @border-color;
+				color: @brand-primary;
+			}
+		}
+
+
+		&.btn-primary {
+			border-color: @brand-primary;
+			color: @brand-primary;
+
+			&:hover {
+				border-color: darken(@brand-primary, 5%);
+				color: darken(@brand-primary, 5%);
+			}
+		}
+
+		&.btn-warning {
+			border-color: #eea236;
+			color: #eea236;
+
+			&:hover {
+				border-color: #ec971f;
+				color: #ec971f;
+			}
+		}
+
+		&.btn-danger {
+			border-color: #d9534f;
+			color: #d9534f;
+
+			&:hover {
+				border-color: #c9302c;
+				color: #c9302c;
+			}
+		}
+
+		&.btn-black {
+			border-color: @gray-base;
+			color: @gray-base;
+
+			&:hover, &:focus {
+				border-color: @gray-base;
+				color: @gray-base;
+			}
+		}
+		&.btn-mcyan {
+			border-color: @mcyan-color;
+			color: @mcyan-color;
+		}
+	}
+
+	&.has-dark {
+		&.btn-default {
+			border-color: #fff;
+			color: #fff;
+
+			&:hover, &:focus {
+				border-color: #fff;
+				color: @brand-primary;
+			}
+			&.stroked {
+				&:hover, &:focus {
+					background-color: @white !important;
+				}
+			}
+		}
+	}
+
+
+	&.btn-facebook {
+		background-color: #00529f;
+		color: #fff;
+	}
+
+	&.facebook {
+		background-color: #15539d;
+		color: #fff;
+	}
+	&.twitter {
+		background-color: #03b2ed;
+		color: #fff;
+	}
+	&.google-plus {
+		background-color: #ff2b20;
+		color: #fff;
+	}
+	&.pinterest {
+		background-color: #ca2128;
+		color: #fff;
+	}
+	&.envelope {
+		background-color: #3b99d8;
+		color: #fff;
+	}
+
+
+
+
+
+	&.btn-orange {
+		background-color: #f18526;
+		color: #fff;
+	}
+
+	&.btn-blue {
+		background-color: @blue-color;
+		color: #fff;
+
+		&:hover {
+			background-color: darken(@blue-color, 5%);
+			color: #fff;
+		}
+	}
+	&.btn-mcyan {
+		background-color: @mcyan-color;
+		color: #fff;
+	}
+	&.btn-light-megenta {
+		background-color: #e7d7ee;
+		color: #9b59b6;
+	}
+	&.btn-light-red {
+		background-color: #f9d4d0;
+		color: #e74c3c;
+	}
+	&.btn-red {
+		background-color: #e74c3c;
+		color: #fff;
+	}
+	&.btn-green {
+		background-color: #4caf50;
+		color: #fff;
+	}
+
+	&.btn-black {
+		background-color: #000000;
+		color: #33241e;
+	}
+
+	&.btn-has-icon {
+		padding: 0;
+
+		.bicon {
+			padding: 6px 12px;
+			display: inline-block;
+			text-align: center;
+		}
+		.btext {
+			padding: 6px 12px;
+			display: inline-block;
+			text-align: center;
+		}
+
+		&.btn-lg {
+			.bicon {
+				padding: 16px;
+			}
+			.btext {
+				padding: 16px;
+			}
+		}
+
+		&.btn-black {
+			.bicon {
+				background-color: #4b5a67;
+			}
+		}
+
+		&.btn-primary {
+			.bicon {
+				background-color: darken(@brand-primary, 5%);
+			}
+		}
+
+		&.btn-red {
+			.bicon {
+				background-color: #c0392b;
+			}
+		}
+	}
+
+
+}

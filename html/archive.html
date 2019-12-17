@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Sundarban</title>
+    <link href="plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="plugins/slick/slick.css" rel="stylesheet">
+    <link href="plugins/slick/slick-theme.css" rel="stylesheet">
+    <link href="plugins/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="plugins/sliderPro/dist/css/slider-pro.min.css" rel="stylesheet">
+    <link href="plugins/li-scroller/li-scroller.css" rel="stylesheet">
+    <link href="plugins/datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-content">
+            <header class="header">
+                <div class="header-metabar static">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="day-times">
+                                <span>বুধবার, ১৮ জানুয়ারি ২০১৭ | ৫ মাঘ ১৪২৩ </span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <ul class="list-inline text-center header-socials">
+                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="search-holder">
+                                <form action="">
+                                    <div class="searchbar">
+                                        <input type="text" class="form-control" placeholder="কী খুঁজতে চান?">
+                                        <button class="btn"><i class="ion-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-brandbar mb-20">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <a class="header-brand" href="#"><img class="img-responsive" src="images/logo.png" alt="..."></a> 
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="ad-spaces">Ad Space</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="ad-spaces">Ad Space</div>
+                        </div>
+                    </div>                       
+                </div>
+                <nav class="navbar navbar-inverse">
+                    <div class="container-no">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-name" href="#">Menu</a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">প্রচ্ছদ</a></li>
+                                <li><a href="#">জাতীয়</a></li>
+                                <li><a href="#">আন্তর্জাতিক</a></li>
+                                <li><a href="#">সারাদেশ </a></li>
+                                <li><a href="#">রাজনীতি</a></li>
+                                <li><a href="#">অর্থনীতি</a></li>
+                                <li><a href="#">শিক্ষা</a></li>
+                                <li><a href="#">স্বাস্থ্য</a></li>
+                                <li><a href="#">খেলাধুলা</a></li>
+                                <li><a href="#">কৃষি</a></li>
+                                <li><a href="#">মিডিয়া</a></li>
+                                <li><a href="#">ছবিঘর</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+                <div class="clearfix breaking-news">
+                    <div class="pull-left">
+                        <span class="title">শিরোনাম: </span>
+                    </div>
+                    <div class="news-scroller">
+                        <ul id="newsScroll" class="news-scroller-lists">
+                            <li><span>10/10/2007</span><a href="#">আগামী অর্থবছরের জন্য নির্বাচন কমিশনকে দেড় হাজার কোটি টাকা দিতে যাচ্ছে সরকার</a></li>
+                            <li><span>10/10/2007</span><a href="#">রোহিঙ্গা: কারও কোনো মাথাব্যথা নেই</a></li>
+                            <li><span>10/10/2007</span><a href="#">মেডিকেলে ভর্তি পরীক্ষা ৪ অক্টোবর</a></li>
+                            <li><span>10/10/2007</span><a href="#">আলী রীয়াজ ড্রোন, তালেবান এবং একজন নওয়াজ শরীফ</a></li>
+                            <li><span>10/10/2007</span><a href="#">নির্বাচন নিয়ে গোলমাল লাগলে দুর্ভোগ আছে: ইউনূস</a></li>
+                            <li><span>10/10/2007</span><a href="#">ইউনূস-বিএনপির বক্তব্য একসূত্রে গাঁথা: তোফায়েল</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <main class="main-content">
+                <div class="content">
+
+                    <div class="row">
+                        <div class="col-sm-4 col-md-3">
+                            <h3 class="category-heading mt-0"><span>আর্কাইভ</span></h3>
+                            <div id="archived" class="mb-30"></div>
+
+                            <div class="updated-posts mb-20">
+                                <h3 class="updated-posts-heading"><span>সর্বশেষ সংবাদ</span></h3>
+                                <div class="updated-post">
+                                    <ul class="updated-post-lists">
+                                        <li><a href="">রোববার দিনটি আপনার কেমন যাবে?</a></li>
+                                        <li><a href="">নাশকতায় মামলায় খুলনায় কাউন্সিলর গ্রেফতার</a></li>
+                                        <li><a href="">রাষ্ট্রপতির সিদ্ধান্ত মেনে নেবে আওয়ামী লীগ : ওবায়দুল কাদের</a></li>
+                                        <li><a href="">সময় সুযোগমতো রাজপথে নামবে বিএনপি: ফখরুল</a></li>
+                                        <li><a href="">ইরানের বিরুদ্ধে জরুরি অবস্থার মেয়াদ বাড়ালেন ওবামা</a></li>
+                                        <li><a href="">২০১৯ সালের ডিভি লটারির তালিকায় বাংলাদেশ নেই</a></li>
+                                        <li><a href="">২০১৯ সালের ডিভি লটারির তালিকায় বাংলাদেশ নেই</a></li>
+                                        <li><a href="">২০১৯ সালের ডিভি লটারির তালিকায় বাংলাদেশ নেই</a></li>
+                                        <li><a href="">২০১৯ সালের ডিভি লটারির তালিকায় বাংলাদেশ নেই</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-8 col-md-9">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h2 class="page-heading">আর্কাইভ অনুসন্ধান - ০১ জানুয়ারি, ২০১৭ ইং</h2>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="post post-full">
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <a href="" class="post-thumb"><img src="images/posts/320x200/1.jpg" alt="..."></a>
+                                            </div>
+                                            <div class="col-sm-7">
+                                                <div class="post-denote">
+                                                    <h4 class="post-title">
+                                                        <a href="">ভারতে স্কুল বাস দুর্ঘটনা : ১৫ শিশু নিহত</a>
+                                                    </h4>
+                                                    <span> এসবিনিউজ ডেস্ক| ১২:৪২, জানুয়ারি ২০, ২০১৭ </span>
+                                                    <div class="note">
+                                                        <p>ভারতের উত্তরাঞ্চলে বৃহস্পতিবার স্কুল বাস দুর্ঘটনায় কমপক্ষে ১৫ শিশু নিহত ও অনেকে আহত হয়েছে। একটি ট্রাকের সাথে বাসটির মুখোমুখি সংঘর্ষে মর্মান্তিক এ দুর্ঘটনা ঘটে। পুলিশ একথা জানায়। দুর্ঘটনায় বাসের চালকও নিহত হয়। ভারতের উত্তর প্রদেশ পুলিশের...</p>
+                                                    </div>
+                                                    <a href="" class="btn btn-default">বিস্তারিত</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post post-full">
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <a href="" class="post-thumb"><img src="images/posts/320x200/1.jpg" alt="..."></a>
+                                            </div>
+                                            <div class="col-sm-7">
+                                                <div class="post-denote">
+                                                    <h4 class="post-title">
+                                                        <a href="">ভারতে স্কুল বাস দুর্ঘটনা : ১৫ শিশু নিহত</a>
+                                                    </h4>
+                                                    <span> এসবিনিউজ ডেস্ক| ১২:৪২, জানুয়ারি ২০, ২০১৭ </span>
+                                                    <div class="note">
+                                                        <p>ভারতের উত্তরাঞ্চলে বৃহস্পতিবার স্কুল বাস দুর্ঘটনায় কমপক্ষে ১৫ শিশু নিহত ও অনেকে আহত হয়েছে। একটি ট্রাকের সাথে বাসটির মুখোমুখি সংঘর্ষে মর্মান্তিক এ দুর্ঘটনা ঘটে। পুলিশ একথা জানায়। দুর্ঘটনায় বাসের চালকও নিহত হয়। ভারতের উত্তর প্রদেশ পুলিশের...</p>
+                                                    </div>
+                                                    <a href="" class="btn btn-default">বিস্তারিত</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post post-full">
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <a href="" class="post-thumb"><img src="images/posts/320x200/1.jpg" alt="..."></a>
+                                            </div>
+                                            <div class="col-sm-7">
+                                                <div class="post-denote">
+                                                    <h4 class="post-title">
+                                                        <a href="">ভারতে স্কুল বাস দুর্ঘটনা : ১৫ শিশু নিহত</a>
+                                                    </h4>
+                                                    <span> এসবিনিউজ ডেস্ক| ১২:৪২, জানুয়ারি ২০, ২০১৭ </span>
+                                                    <div class="note">
+                                                        <p>ভারতের উত্তরাঞ্চলে বৃহস্পতিবার স্কুল বাস দুর্ঘটনায় কমপক্ষে ১৫ শিশু নিহত ও অনেকে আহত হয়েছে। একটি ট্রাকের সাথে বাসটির মুখোমুখি সংঘর্ষে মর্মান্তিক এ দুর্ঘটনা ঘটে। পুলিশ একথা জানায়। দুর্ঘটনায় বাসের চালকও নিহত হয়। ভারতের উত্তর প্রদেশ পুলিশের...</p>
+                                                    </div>
+                                                    <a href="" class="btn btn-default">বিস্তারিত</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <ul class="footer-nav list-inline text-center">
+                <li><a href="">রাজনীতি</a></li>
+                <li><a href="">রাজনীতি</a></li>
+                <li><a href="">রাজনীতি</a></li>
+                <li><a href="">রাজনীতি</a></li>
+                <li><a href="">রাজনীতি</a></li>
+                <li><a href="">রাজনীতি</a></li>
+                <li><a href="">রাজনীতি</a></li>
+                <li><a href="">রাজনীতি</a></li>
+                <li><a href="">রাজনীতি</a></li>
+            </ul>
+
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="footer-brand"><img class="img-responsive" src="images/logo.png" alt="..."></div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="editor-info">
+                            সম্পাদক : এ কে হিরু<br>
+                            ফোন : +৮৮ ০১৭১১২৭৫৫১৮<br>
+                            ই-মেইল : sbnewsbd@gmail.com
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="footer-copyinfo">
+                            Copyright &copy; 2017 sundarbannews. All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/browserclass.js"></script>
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="plugins/sliderPro/dist/js/jquery.sliderPro.min.js"></script>
+    <script src="plugins/li-scroller/jquery.li-scroller.1.0.js"></script>
+    <script src="plugins/datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+             $('#teaserSlider').slick({
+                dots: false,
+                arrows: true,
+                infinite: true,
+                autoplay: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: true
+            });
+
+             $( '#photoGallery' ).sliderPro({
+                width: 960,
+                height: 500,
+                fade: true,
+                arrows: true,
+                buttons: false,
+                fullScreen: true,
+                shuffle: true,
+                smallSize: 500,
+                mediumSize: 1000,
+                largeSize: 3000,
+                thumbnailArrows: true,
+                autoplay: false
+            });
+
+             $("ul#newsScroll").liScroll();
+
+                $('#archived').datepicker({
+                    todayHighlight: true,
+                    toggleActive: true
+                });
+
+            
+
+            $(window).on('load', function(){
+                
+                $(".updated-post").mCustomScrollbar({
+                    setHeight:330,
+                    theme:"minimal-dark"
+                });
+                $(".video-scrollbar").mCustomScrollbar({
+                    setHeight:150,
+                    theme:"minimal-dark"
+                });
+            });
+
+        });
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+/* UTILITIES */
+
+.no-margin {
+  margin: 0 !important;
+}
+.relative { position: relative !important; }
+.dtable { 
+    display: table; 
+
+    .cell {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    &.valign-bottom {
+      .cell {
+        display: table-cell;
+        vertical-align: bottom;
+      }
+    } 
+}
+.dtable-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.hw-100 {
+    width: 100%;
+    height: 100%;
+}
+
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.minh-100 {
+  min-height: 100% !important;
+}
+
+/* UTILITIES */
+
+.white { color: @white !important; }
+
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+
+.fs-10 { font-size: 10px !important; }
+.fs-11 { font-size: 11px !important; }
+.fs-12 { font-size: 12px !important; }
+.fs-13 { font-size: 13px !important; }
+.fs-16 { font-size: 16px !important; }
+.fs-18 { font-size: 18px !important; }
+.fs-20 { font-size: 20px !important; }
+.fs-24 { font-size: 24px !important; }
+.fs-26 { font-size: 26px !important; }
+.fs-30 { font-size: 30px !important; }
+.fs-40 { font-size: 40px !important; }
+
+
+.hw100 { height:100%; width:100%;}
+.w100{ width:100%;}
+.h100{ height:100%; }
+.no-margin { margin:0; }
+.no-padding {  padding:0;}
+.no-margin-padding { margin:0;  padding:0;}
+.relative {position:relative;}
+.zindex10 { z-index:10}
+
+.margin-0 { margin: 0 !important; }
+.padding-0 { padding: 0 !important;}
+
+.mt-0 { margin-top: 0px !important; }
+.mt-5 { margin-top: 5px !important; }
+.mt-10 { margin-top: 10px !important; }
+.mt-15 { margin-top: 15px !important; }
+.mt-20 { margin-top: 20px !important; }
+.mt-30 { margin-top: 30px !important; }
+.mt-35 { margin-top: 35px !important; }
+.mt-40 { margin-top: 40px !important; }
+.mt-42 { margin-top: 42px !important; }
+.mt-45 { margin-top: 45px !important; }
+.mt-46 { margin-top: 46px !important; }
+.mt-47 { margin-top: 47px !important; }
+.mt-48 { margin-top: 48px !important; }
+.mt-50 { margin-top: 50px !important; }
+.mt-60 { margin-top: 60px !important; }
+.mt-65 { margin-top: 65px !important; }
+.mt-70 { margin-top: 70px !important; }
+.mt-80 { margin-top: 80px !important; }
+
+.mr-30 { margin-right: 30px !important; }
+
+.mb-0 { margin-bottom: 0px !important; }
+.mb-5 { margin-bottom: 5px !important; }
+.mb-10 { margin-bottom: 10px !important; }
+.mb-15 { margin-bottom: 15px !important; }
+.mb-20 { margin-bottom: 20px !important; }
+.mb-25 { margin-bottom: 25px !important; }
+.mb-30 { margin-bottom: 30px !important; }
+.mb-35 { margin-bottom: 35px !important; }
+.mb-40 { margin-bottom: 40px !important; }
+.mb-50 { margin-bottom: 50px !important; }
+.mb-60 { margin-bottom: 60px !important; }
+.mb-70 { margin-bottom: 70px !important; }
+
+.ml-10 { margin-left: 10px !important; }
+.ml-20 { margin-left: 20px !important; }
+.ml-30 { margin-left: 30px !important; }
+
+.mr-10 { margin-right: 10px !important; }
+.mr-20 { margin-right: 20px !important; }
+.mr-30 { margin-right: 30px !important; }
+.mr-30 { margin-right: 40px !important; }
+
+
+
+.pt-20 { padding-top: 20px !important; }
+.pt-30 { padding-top: 30px !important; }
+.pt-40 { padding-top: 40px !important; }
+.pt-60 { padding-top: 60px !important; }
+
+.pb-0 { padding-bottom: 0 !important; }
+.pb-30 { padding-bottom: 30px !important; }
+
+.pl-0 { padding-left: 0 !important; }
+.pl-10 { padding-left: 10px !important; }
+.pl-30 { padding-left: 30px !important; }
+
+.pr-0 { padding-right: 0 !important;}
+
+.plr-20 { padding-left: 20px !important; padding-right: 20px !important; }
+.plr-30 { padding-left: 30px !important; padding-right: 30px !important; }
+
+.mr-5 { margin-right: 5px !important; }
+
+@media @desktopOnly {
+  .pull-right-sm { float: right !important; }
+}
+@media @xsOnly {
+  .mb-xs-15 { margin-bottom: 15px !important; }
+}
+
+
+.radius-10 {
+  .border-radius(10px) !important;
+}
+.radius-30 {
+  .border-radius(30px) !important;
+}
+
+
+
+.absolute {
+  position: absolute;
+
+  &.left {
+    left: 0;
+  }
+  &.right {
+    right: 0;
+  }
+  &.top {
+    top: 0;
+  }
+  &.bottom {
+    bottom: 0;
+  }
+}
+
+
+
+.z1 { z-index: 1; }
+.z2 { z-index: 2; }
+.z3 { z-index: 3; }
+.z4 { z-index: 4; }
+.z5 { z-index: 5; }
+.z6 { z-index: 6; }
+.z7 { z-index: 7; }
+.z8 { z-index: 8; }
+.z9 { z-index: 9; }
+.z10 { z-index: 10; }
+
+
+
+.color-info { color: @brand-info; }
+.brand-primary { color: @brand-primary !important; }
+
+
+.container-fluid-site {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.transition {
+}
+.cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.image-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  .cover;
+}
+
+
+.wh100 {
+  width: 100%;
+  height: 100%;
+}
+.mh100 { min-height: 100%; }
+.inline-block { display: inline-block !important; }
+.display-table {
+  display: table;
+}
+.display-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.relative { position: relative; }
+.display-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.display-table-cell {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+
+.section, .brick {
+  &.dark {
+    h1, h2, h3, h4, h5, h6, p, div, span {
+      color: #fff;
+    }
+  }
+}
+
+.form-group-bar {
+  margin-bottom: 15px;
+}
+.range-group {
+  margin-bottom: 15px;
+}
+
+.text-color { color: @text-color; }
+.color-muted { color: @mute-color; }
+.semi-muted { color: #666; }
+.accent-font { font-family: @accent-font !important; }
+.cover-img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  .cover; 
+}
+
+.vmiddle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+@media @desktopOnly {
+  .sm-right {
+    text-align: right;
+  }
+  .text-right-sml {
+    text-align: right;
+  }
+}
+
+@media @xxsOnly {
+  .col-xxs-12 {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15;
+    position: relative;
+  }
+}

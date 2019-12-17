@@ -1,0 +1,148 @@
+/* Mixin */
+/* Implementation */
+#div {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+/* Implementation */
+#div {
+  -webkit-border-radius: 20px 20px 0px 0px;
+  -moz-border-radius: 20px 20px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
+}
+/* Implementation */
+#div {
+  -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+}
+/* Implementation */
+.transition-all {
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+#div:hover {
+  opacity: 0;
+}
+/*.transform (@rotate: 90deg, @scale: 1, @skew: 1deg, @translate: 10px) {
+  -webkit-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+  -moz-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+  -o-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+  -ms-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+  transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+}
+
+#div {
+  .transform(5deg, 0.5, 1deg, 0px);
+}*/
+/* gradient Implementation */
+#div {
+  background-color: #663333;
+  background-image: -webkit-linear-gradient(left, #663333, #333333);
+  background-image: -moz-linear-gradient(left, #663333, #333333);
+  background-image: -o-linear-gradient(left, #663333, #333333);
+  background-image: -ms-linear-gradient(left, #663333, #333333);
+  background-image: linear-gradient(left, #663333, #333333);
+}
+/* Implementation */
+#div {
+  background-color: #BADA55;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+.cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#div {
+  background-color: #ff0000;
+  background-color: rgba(255, 0, 0, 0.2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33ff0000, endColorstr=#33ff0000);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33ff0000, endColorstr=#33ff0000);
+}
+.placeholder-transition::-webkit-input-placeholder {
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.placeholder-transition::-moz-placeholder {
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.placeholder-transition:-ms-input-placeholder {
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.placeholder-transition:-ms-input-placeholder {
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+#div::-webkit-input-placeholder {
+  color: #ffffff;
+}
+#div::-moz-placeholder {
+  color: #ffffff;
+}
+#div:-ms-input-placeholder {
+  color: #ffffff;
+}
+#div:-ms-input-placeholder {
+  color: #ffffff;
+}
+/*Color Math*/
+/* Implementation */
+/*.one {
+  color: @base;
+}
+
+.two {
+  color: @complement1;
+}
+
+.three {
+  color: @complement2;
+}
+
+.four {
+  color: @lighten1;
+}
+
+.five {
+  color: @lighten2;
+}*/
+/* Implementation */
+.base-color {
+  color: #b1b0b8;
+}
+.base-lighter {
+  color: #cccbd0;
+}
+.base-lighter2 {
+  color: #e6e6e8;
+}
+.base-darker {
+  color: #a4a9a9;
+}
+.base-darker2 {
+  color: #7a7b88;
+}

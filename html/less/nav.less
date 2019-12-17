@@ -1,0 +1,41 @@
+.navbar {
+	margin-bottom: 0;
+	.navbar-header {
+		.navbar-brand {
+			height: 60px;
+			img {
+				max-height: 30px;
+			}
+		}
+	}
+	&.navbar-inverse {
+		border: none;
+		box-shadow: none;
+		.border-radius(0);
+		.navbar-collapse {
+			@media @desktopOnly {
+				/* padding-left: 0;
+				padding-right: 0; */
+			}
+		}
+
+		.nav {
+			&.navbar-nav {
+				> li {
+					> a {
+						font-weight: bold;
+						color: @white;
+						&:hover, &:active, &:focus {
+							background-color: @brand-primary;
+						}
+					}
+					&.active {
+						a {
+							background-color: @brand-primary;
+						}
+					}
+				}
+			}
+		}
+	}
+}

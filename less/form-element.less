@@ -1,0 +1,261 @@
+label {
+	font-weight: normal;
+}
+.site-label {
+	font-size: 13px;
+	font-weight: normal;
+	color: @title-color;
+}
+.form-control {
+	box-shadow: none !important;
+	border-color: @border-color;
+	.border-radius(2px);
+
+	&.site-field {
+		height: 38px;
+		background-color: #f4f4f4;
+		border-color: #f4f4f4;
+	}
+
+	&.huge {
+		padding: 10px 15px;
+		height: 50px;
+	}
+
+	&.stk-gray {
+		border-color: @border-color;
+	}
+
+	&.stk2 {
+		border-width: 2px;
+	}
+
+	&:focus {
+		border-color: @brand-primary;
+		outline: none;
+	}
+
+
+
+
+
+	&.select-styled {
+		background-image: url('../images/select-arrow.png');
+		background-position: right 50%;
+		background-repeat: no-repeat;
+		background-size: 25px 5px;
+		padding-right: 35px;
+
+		-webkit-user-select: none;
+		-moz-user-select: -moz-none;
+		-ms-user-select: none;
+		user-select: none;
+
+		-webkit-appearance: none;
+		-moz-appearance: none;
+			 appearance: none;
+	}
+
+}
+.input-group {
+	.input-group-addon {
+		border-color: @border-color;
+	}
+}
+
+.label-styled {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: @text-color;
+}
+
+.control-label {
+    &.label-left-upp {
+        text-align: left;
+        text-transform: uppercase;
+    }
+}
+
+.label-grouped {
+	padding-top: 10px;
+	label {
+		text-transform: uppercase;
+	}
+}
+
+.file-styled {
+	background-color: #fff;
+}
+.like-input {
+	background-color: ;
+	padding: 6px 12px;
+	.border-radius(2px);
+}
+
+.file-styled {
+	background-color: #fff;
+	background-image: url('../images/folder-open.png');
+	background-position: -webkit-calc(~"100% - 12px") 50%;
+	background-position: -moz-calc(~"100% - 12px") 50%;
+	background-position: calc(~"100% - 12px") 50%;
+	background-repeat: no-repeat;
+	border: 1px solid @border-color;
+	height: 34px;
+	padding: 6px 30px 10px 12px;
+	position: relative;
+	.border-radius(2px);
+
+	input[type="file"] {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: block;
+		z-index: 5;
+		.opacity(0);
+	}
+
+	.file-name {
+		display: block;
+		position: relative;
+		width : 95%;
+		overflow:hidden;
+		display:inline-block;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.file-meta {
+		display: block;
+		position: relative;
+		width : 95%;
+		overflow:hidden;
+		display:inline-block;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		.opacity(0.5);
+	}
+}
+
+.check-styled {
+	label {
+		font-weight: normal;
+	}
+	input[type="checkbox"] {
+    	display:none; 	
+
+    	+ label span {
+    		display:inline-block;
+		    width:23px;
+		    height:23px;
+		    margin:0 10px 0 0;
+		    vertical-align:middle;
+		    background-image:url('../images/circle.png');
+		    background-position: left center;
+		    background-size: 23px 23px;
+		    background-repeat: no-repeat;
+		    cursor:pointer;
+    	}
+
+    	&:checked {
+    		+ label span {
+			    background:url('../images/check-os.png');
+			}
+
+    	}
+	}
+}
+
+.checkbox-styled {
+	position: relative;
+	input[type="checkbox"] {
+		.opacity(0);
+    	position: absolute;
+	}
+	> label {
+		display: inline-block;
+	    vertical-align: middle;
+	    margin: 5px;
+	    cursor: pointer;
+	    position: relative;
+	}
+	input[type="checkbox"] {
+		+ label {
+			&:before {
+				content: '';
+				line-height: 1;
+			    background-image:url('../images/checkbox.png');
+			    background-position: left center;
+			    background-size: 19px 19px;
+			    background-repeat: no-repeat;
+			    cursor:pointer;
+			    display: inline-block;
+			    vertical-align: middle;
+			    width: 20px;
+			    height: 20px;
+			    padding: 2px;
+			    margin-right: 10px;
+			    text-align: center;
+			}
+		}
+
+		&:checked {
+			+ label {
+				&:before {
+					/* content: "\f121";
+				    font-family: "Ionicons";
+				    color: @brand-primary; */
+				    background-image:url('../images/checkbox-check.png');				    
+				}
+			}
+		}
+	}
+
+	.label-text {
+		display: block;
+		padding-left: 35px;
+		font-size: 80%;
+		.opacity(0.7);
+	}
+	
+}
+
+
+.dropzone {
+	border-style: dashed;
+	border-color: @white;
+	.border-radius(4px);
+	.drop-media {
+		font-size: 60px;
+		line-height: 1;
+		display: block;
+		.opacity(0.7);
+	}
+	.drop-mstext {
+		.opacity(0.5);
+	}
+}
+
+
+
+.irs-from, 
+.irs-to, 
+.irs-single {
+	background: @brand-primary;
+
+	&::after {
+		border-color: @brand-primary transparent transparent;
+	}
+}
+
+body {
+	&.safari {
+		.form-control {
+			&.select-styled {
+				background-image: url('../images/select-arrow-s.png');
+				background-position: right center;
+				background-size: 24px 8px;
+			}
+		}
+	}
+}

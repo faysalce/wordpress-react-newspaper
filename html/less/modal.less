@@ -1,0 +1,104 @@
+.modal-backdrop.in {
+	opacity: 0.75;
+}
+
+
+.modal-fullpage {
+	.modal-backdrop {
+		background-color: @white;
+		&.in {
+			.opacity(1);
+		}
+	}
+}
+
+.modal {
+	&.modal-white {
+		.close {
+			width: 30px;
+			height: 30px;
+			display: block;
+			position: absolute;
+			top: 60px;
+			right: 60px;
+			font-size: 28px;
+    		font-weight: 400;
+    		border: 1px solid @text-color;
+			color: @text-color;
+			.border-radius(50%);
+		}
+		.modal-dialog {
+
+		}
+		.modal-content {
+			box-shadow: none;
+			border: 0;
+
+			.in-title {
+				line-height: 1.5;
+			}
+		}
+	}
+}
+
+.nav {
+	&.nav-trouble {
+		li {
+			display: block;
+			float: left;
+			width: 50%;
+			a {
+				font-size: 24px;
+				background-color: transparent;
+				padding: 2px 12px;
+				color: @text-color;
+				position: relative;
+
+				&:after {
+					content: " ";					
+					background-position: center left;
+					background-size: 68px 48px;
+					background-repeat: no-repeat;
+					display: block;
+					width: 68px;
+					height: 48px;
+					position: absolute;
+					top: 22px;
+				}
+			}
+
+			&.active {
+				a {
+					font-weight: 700;
+				}
+			}
+
+			&.tb-password {
+				a {
+					text-align: left;
+				}
+				&.active {
+					a {
+						&:after {
+							background-image: url("../images/arrow-pass.png");
+							right: 0;
+						}
+					}
+				}
+			}
+			&.tb-issue {
+				a {
+					text-align: right;
+				}
+				&.active {
+					a {
+						&:after {
+							background-image: url("../images/arrow-issue.png");
+							left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
